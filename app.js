@@ -9,7 +9,6 @@ app.use(cors());
 app.use(bodyParser.json());
 
 app.use(profileRoutes);
-// app.use('/api', orderRoutes);
 
 app.use((error, req, res, next) => {
   const status = error.statusCode || 500;
